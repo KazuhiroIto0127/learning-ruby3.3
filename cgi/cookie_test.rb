@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/opt/homebrew/bin/ruby
 require "cgi"
 
 COOKIE_NAME = "chocolate_chip"
