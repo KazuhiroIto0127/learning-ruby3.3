@@ -1,4 +1,6 @@
-require "cgi"
+# frozen_string_literal: true
 
-puts CGI.escape("Wao hello/test & yes")
-puts CGI.escapeHTML("a < 100 && b > 200")
+require 'cgi'
+
+puts CGI.escape('Wao hello/test & yes')
+puts CGI.escapeHTML('a < 100 && b > 200')

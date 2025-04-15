@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 def call_block
-  puts "Start of method"
+  puts 'Start of method'
   yield
   yield
-  puts "End of method"
+  puts 'End of method'
 end
 
-call_block { puts "In the block" }
+call_block { puts 'In the block' }
 
 # Output:
 # Start of method
@@ -14,11 +16,11 @@ call_block { puts "In the block" }
 # End of method
 
 def who_says_what
-  yield("Dave", "hello")
-  yield("Andy", "goodbye")
+  yield('Dave', 'hello')
+  yield('Andy', 'goodbye')
 end
 
-who_says_what{ |person, phrase| puts "#{person} says #{phrase}" }
+who_says_what { |person, phrase| puts "#{person} says #{phrase}" }
 
 # Output:
 # Dave says hello
