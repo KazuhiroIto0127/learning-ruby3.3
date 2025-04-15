@@ -25,3 +25,17 @@ who_says_what { |person, phrase| puts "#{person} says #{phrase}" }
 # Output:
 # Dave says hello
 # Andy says goodbye
+
+[1, 2, 3].each { p _1 }
+
+# Output:
+# 1
+# 2
+# 3
+
+[1, 2, 3].each_with_index { puts "#{_2}: #{_1}" }
+
+# Output:
+# 0: 1
+# 1: 2
+# 2: 3
