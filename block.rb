@@ -26,14 +26,16 @@ who_says_what { |person, phrase| puts "#{person} says #{phrase}" }
 # Dave says hello
 # Andy says goodbye
 
-[1, 2, 3].each { p _1 }
+[1, 2, 3].each { p it }
 
 # Output:
 # 1
 # 2
 # 3
 
+# rubocop:disable Style/NumberedParametersLimit
 [1, 2, 3].each_with_index { puts "#{_2}: #{_1}" }
+# rubocop:enable Style/NumberedParametersLimit
 
 # Output:
 # 0: 1

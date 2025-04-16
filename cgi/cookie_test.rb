@@ -15,5 +15,5 @@ msg = if values.empty?
       end
 
 cookie = CGI::Cookie.new(COOKIE_NAME, Time.now.to_s)
-cookie.expires = Time.now + 30 * 24 * 3600
+cookie.expires = Time.now + (30 * 24 * 3600)
 cgi.out('cookie' => cookie) { msg }
