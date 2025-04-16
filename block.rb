@@ -41,3 +41,10 @@ who_says_what { |person, phrase| puts "#{person} says #{phrase}" }
 # 0: 1
 # 1: 2
 # 2: 3
+
+def run_block(&block)
+  block.call('Hello!')
+end
+
+p = proc { |x| puts x }
+run_block(&p)
