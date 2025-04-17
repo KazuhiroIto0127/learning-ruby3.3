@@ -1,8 +1,4 @@
-module Greeting
-  def hello
-    puts 'hello'
-  end
-end
+require_relative 'greeting'
 
 class A
   include Greeting
