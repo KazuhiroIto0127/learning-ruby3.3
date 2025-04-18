@@ -30,3 +30,8 @@
 #
 #   # library "pathname"              # Standard libraries
 # end
+
+target :app do
+  signature 'sig'
+  check 'hello.rb'
+end
